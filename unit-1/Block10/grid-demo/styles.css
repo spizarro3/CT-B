@@ -1,0 +1,34 @@
+#grid-row {
+  display: grid;
+  /* 3 columns */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin-bottom: 3em;
+}
+
+.box {
+  border: 1px solid black;
+}
+
+#grid {
+  margin-top: 7em;
+  display: grid;
+  /* 5 columns */
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+    "main1 sidebar"
+    "main2 sidebar";
+}
+
+#box4 {
+  grid-area: main1;
+}
+
+#box5 {
+  grid-area: main2;
+}
+
+#box6 {
+  grid-area: sidebar;
+}
